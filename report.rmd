@@ -1,0 +1,255 @@
+---
+output:
+  word_document:
+    reference_docx: Doc1.dotx
+    fig_caption: yes
+  bookdown::word_document2: default
+  pdf_document: default
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE,fig.dim = c(9, 6.75), results='asis',fig.keep='all'}
+# This markdown should be knitted to a word document not HTML or pdf. If you want pdf output, please knit to word first and then save as pdf.
+# It mixes lots of different methods and libraries for writing the captions, tables & text
+# It has been written as an R studio project using RStudio Version 1.4.1717 on windows 10
+# The "Permission denied" error is caused by already having report.docx open. Close the word file if you get this.
+
+library(rstudioapi) 
+library(pander)
+library(bookdown)
+load("report/report_datatables.Rdata")
+panderOptions("table.split.table",Inf)
+panderOptions("keep.line.breaks",T) # Without this, the template is automatically overwritten it seems
+panderOptions("list.style", 40)
+
+```
+
+
+# Sardine (Sardina pilchardus) in Subarea 7 (southern Celtic Seas and the English Channel)
+## ICES stock advice
+```{r echo=FALSE, message=FALSE, warning=FALSE,fig.dim = c(9, 6.75), results='asis',fig.keep='all'}
+# You can either type outside the chunks or inside the chunk using writeLines, which is useful for stitching numbers into sentences
+writeLines(paste0("ICES advises that when the precautionary approach is applied, catches in ",as.character(EndYear+1)," should be no more than ",as.character(advisedcatch)," tonnes."))
+```
+
+## Stock development over time
+```{r echo=FALSE, message=FALSE, warning=FALSE,fig.dim = c(9, 6.75), results='asis',fig.keep='all'}
+writeLines("Fishing pressure on the stock is below FMSY and stock size is above MSY Btrigger (Figure 2)")
+writeLines("\n")
+  
+```
+
+
+```{r echo=FALSE,out.width="310px",fig.show='hold',fig.align='center',fig.cap='notshowing'}
+knitr::include_graphics(c("output/CatchbyCat.png","output/biomass_timseries.png"))
+
+```
+
+Figure 1: Sardine in Subarea 7. Catches by category since 2002. The biomass was estimated from the total area
+of the PELTIC acoustic survey, and the shaded areas on the biomass plot represent 95% confidence intervals. The
+orange horizontal lines indicate the biomass index for `r toString(EndYear)` and the average for `r toString(EndYear-2)`–`r toString(EndYear-1)`.
+
+## Catch Scenarios
+
+
+```{r echo=FALSE, width = 300, message=FALSE, warning=FALSE, results='asis',fig.keep='all'}
+#pandoc.image("output/CatchbyCat.png",caption='Catches. These figures are not the same format as those in the advice sheet - find out how to make them')
+
+# Example of how advice sentence could be tied together automatically:
+writeLines(paste0("ICES framework for category 3 short-lived stocks using the 1-over-2 rule was applied (ICES, 2020a). The biomass estimate
+derived from the total area of the PELTIC acoustic survey was used as the biomass index. The advice is based on the ratio
+between the last index value (index A) and the average of the two preceding values (index B), multiplied by the mean
+catches of the years ",as.character(EndYear-2),"–",as.character(EndYear-1),". The index is estimated to have ",change,"d by ",index_ratio,"% and thus the uncertainty cap was not applied. The 1-over-2 rule with an uncertainty cap of 80% with a biomass safeguard is considered precautionary and as
+such a PA buffer was not considered (ICES, 2012, 2020a, 2020b). Discarding is considered negligible at ", as.character(round(sum(prev2years[,c("Catch.Discards")], na.rm = T)/sum(prev2years[,c("catch_summed")], na.rm = T)*100,2)),"% of total catch for ",as.character(EndYear-2),"–",as.character(EndYear-1),".\n"))
+
+
+```
+
+
+```{r message=FALSE, echo=FALSE, WARNING=FALSE, dpi=10}
+
+#kable(basis, table.attr = "style='width:1000px;'")# %>% column_spec(1, width = "0.5in")
+emphasize.strong.cols(1)
+pander(basis, justify = c('left', 'right'), caption = "Table 1: Sardine in Subarea 7. The basis for the catch scenarios *.")
+#cell_spec(df, color = ifelse(df> 20, "red", "blue"))
+```
+
+```{r echo=FALSE, width = 300, message=FALSE, warning=FALSE, results='asis',fig.keep='all'}
+
+writeLines(paste0("\\* The figures in the table are rounded. Calculations were done with unrounded inputs, and computed values may not match exactly when calculated using the rounded figures in the table.\  
+***[Mean catches (",as.character(EndYear-2),"–",as.character(EndYear-1),")] x [Index ratio]\  
+^ This is the first quantitative catch advice for this stock."))
+
+
+```
+
+## Basis of the advice
+
+
+```{r message=FALSE, echo=FALSE, WARNING=FALSE}
+emphasize.strong.cols(1)
+pander(basis_descriptive, justify = c('left', 'right'), caption = "Table 2: Sardine in Subarea 7. The basis of the advice.")
+
+```
+
+\newpage
+## Quality of the assessment
+
+
+```{r echo=FALSE, width = 300, message=FALSE, warning=FALSE, results='asis',fig.keep='all'}
+
+writeLines(paste0("This stock was benchmarked in ",as.character(EndYear)," and the ICES framework for category 3 short-lived stocks using the 1-over-2 rule with
+an uncertainty cap of 80% and a biomass safeguard (ICES, 2020a) was considered appropriate to provide advice. Since it is
+the first application of the framework, the initial catch in the rule is taken from the mean of the catch from the previous
+two years (",as.character(EndYear-2),"–",as.character(EndYear-1),"). A SPiCT model based on quarterly landing data and a biomass index derived from the core area of
+the acoustic survey PELTIC was considered inadequate to provide advice but is used to approximate stock status relative to
+MSY reference points.\n
+French catches from ICES rectangles 25E5 and 25E4 (Subarea 7) have been traditionally allocated to Division 8.a, as they
+occur in the boundary between divisions and are considered to be more closely associated with the sardine stock in
+divisions 8.a-b and 8.d. However, the boundary between sardine stocks in subarea 7 and 8 is unclear and further studies
+are needed to support this procedure to allocate catches"))
+
+
+```
+
+
+
+```{r echo=FALSE,out.width="310px",fig.show='hold',fig.align='center',fig.cap='notshowing'}
+knitr::include_graphics(c("output/spict_bbmsy.png","output/spict_ffmsy.png"))
+```
+
+Figure 2: Sardine in subarea 7. SPiCT analysis showing exploitable biomass relative to BMSY and fishing mortality relative to FMSY.
+The biomass index used was derived from the core area of the acoustic survey PELTIC. The shaded areas in both plots
+indicate 95% confidence intervals. The horizontal lines indicate levels relative to the FMSY and BMSY.
+
+
+## Issues relevant for the advice
+
+
+```{r echo=FALSE, width = 300, message=FALSE, warning=FALSE, results='asis',fig.keep='all'}
+
+writeLines(paste0("The 1-over-2 rule performs the best when there is no time-lag between the survey producing the biomass estimate and
+the TAC implementation (ICES, 2020c). This is especially important for short-lived species, as part of the observed stock
+will not be available for the fishery when there is a large lag in time. The PELTIC survey is conducted in October and the
+biomass estimate is already incorporated in the catch advice for the following year, with a time-lag of only two months.
+The advice for this stock in 2019 was provided for two years since this was a Category 5 stock at the time. As
+from 2020 the stock is Category 3, and given that a new biomass estimate is available every year catch advice could be
+provided annually."))
+
+# Note: The following paragraphs are markdown syntax, and much of it may benefit from being converted to chunks of R
+# These have been made using the microsoft word plugin 'writage'. It converts word documents to markdown and is much simpler than writing it from scratch. Bear in mind some features may be lost - notably, merged cells in tables.
+```
+
+
+\newpage
+## Reference points
+
+| Framework              | Reference point    | Value          | Technical basis                                                                                                                         | Source        |
+|------------------------|--------------------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| MSY approach           | $$MSY B_{trigger} \; proxy$$ | $$\frac{B}{B_{msy}} = 0.5*$$           | Relative value from SPiCT model. BMSY is estimated directly from the SPiCT assessment model and changes when the assessment is updated  | (ICES, 2021a) |
+| MSY approach           | $$F_{msy} \; proxy$$         | $$\frac{F}{F_{msy}} = 1*$$             | Relative value from SPiCT model. FMSY is estimated directly from the SPiCT assessment model and changes when the assessment is updated. | (ICES, 2021a) |
+| Precautionary approach | $$I_{stat}$$              |  `r toString(istat)` tonnes | $$Geomean(I_{hist}).exp(-1.645.sd(log(I_{hist}))$$ \ $I_{hist}$ is the available historical series of the abundance index (2017-`r toString(EndYear)`)                 | (ICES, 2021b) |
+| Precautionary approach | $$B_{lim}, B_{pa}$$          | Not defined    |                                                                                                                                         |               |
+| Precautionary approach | $$F_{lim}$$               | Not defined    |                                                                                                                                         |               |
+| Precautionary approach | $$F_{pa}$$                | Not defined    |                                                                                                                                         |               |
+| Management plan        | $$SSB_{mgt}$$             | Not defined    |                                                                                                                                         |               |
+| Management plan        | $$F_{mgt}$$               | Not defined    |                                                                                                                                         |               |
+\* No reference points are defined for this stock in terms of absolute values. The SPiCT-estimated values of the ratios F/FMSY and B/BMSY
+are used to estimate stock and exploitation status relative to the proxy MSY reference points.
+
+
+## Basis of the assessment
+
+*Table 4: Sardine in Subarea 7. The basis of the assessment.*
+
+| ICES stock data category  | 3 (ICES, 2021c).                                                                                                                                    |
+|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Assessment type           | Survey trends-based assessment                                                                                                                      |
+| Input data                | Commercial catch, biomass estimates from the total area of the acoustic survey PELTIC [A6259]                                                       |
+| Discards and bycatch      | Discards were not included as discarding is considered negligible                                                                                   |
+| Indicators                | Relative fishing mortality and relative biomass derived from a SPiCT model (input data: landings and biomass from PELTIC [A6259] in the core area). |
+| Other information         | This stock was benchmarked in 2021 (WKWEST; ICES, 2021a).                                                                                           |
+| Working group             | Working Group on Southern Horse Mackerel, Anchovy, and Sardine (WGHANSA)                                                                            |
+\newpage
+## History of the advice, catch, and management
+
+```{r message=FALSE, echo=FALSE, WARNING=FALSE}
+
+pander(historic_advice_5a, caption = "Table 5a: Sardine in divisions 8.a–b and 8.d, and Subarea 7 *. ICES advice and official landings. No official TAC is set for this stock. All weights are in tonnes.")
+
+```
+\*. Prior to 2017, sardine in this area was assessed as a single stock combining Subarea 7 (English Channel and Celtic Sea) and divisions
+8.a–b and 8.d (Bay of Biscay).
+
+
+```{r message=FALSE, echo=FALSE, WARNING=FALSE}
+
+pander(historic_advice_5b, caption = "Table 5b: Sardine in Subarea 7. ICES advice and official landings. No official TAC is set for this stock. All weights are in tonnes.")
+
+```
+
+\newpage
+
+## History of the catch and landings
+
+*Table 6: Sardine in Subarea 7. Catch distribution by fleet in `r toString(EndYear-1)` as estimated by ICES.*
+
+| Pelagic trawl Landings	| Purse-seine Landings |	Landings	from other gears | Total Landings (tonnes) |	Discards	| Catch (tonnes) |
+|-------------------------|----------------------|-----------------------------|-------------------------|------------|----------------|
+| `r toString(pelagic_trawl_perc)`%  | `r toString(purse_seine_perc)`% | `r toString(other_perc)`%  | `r toString(round(landingssum))` | Negligible | `r toString(round(catchsum))` |
+
+
+
+```{r message=FALSE, echo=FALSE, WARNING=FALSE}
+names(official_landings_7)[names(official_landings_7)=='France'] = "France **"
+
+pander(official_landings_7, caption = "Table 7: Sardine in Subarea 7. History of reported landings; values are presented for each country participating in the fishery. All weights are in tonnes *.")
+
+```
+
+```{r echo=FALSE, width = 300, message=FALSE, warning=FALSE, results='asis',fig.keep='all'}
+writeLines(paste0(""))
+```
+\* Only catches from 2002 to 2019 were revised by all countries for the benchmark in 2021. Therefore, catches prior 2002 were excluded from Figure 1.\
+\** French catches from ICES rectangles 25E5 and 25E4 are not included.
+
+## Summary of the assessment
+```{r message=FALSE, echo=FALSE, WARNING=FALSE}
+
+pander(biomass_land_disc_8, caption = "Table 8 Sardine in Subarea 7. Assessment summary. The high and low columns represent the 95% confidence intervals of the biomass index. All values are in tonnes.")
+
+```
+
+\newpage
+
+## Sources and references
+
+
+ICES. 2012. ICES Implementation of Advice for Data-limited Stocks in 2012 in its 2012 Advice. ICES CM 2012/ACOM:68.
+42 pp. https://doi.org/10.17895/ices.pub.5322 \
+\
+ICES. 2020a. Tenth Workshop on the Development of Quantitative Assessment Methodologies based on LIFE-history traits,
+exploitation characteristics, and other relevant parameters for data-limited stocks(WKLIFE X). ICES Scientific Reports. 2:98.
+72 pp. http://doi.org/10.17895/ices.pub.5985 \
+\
+ICES. 2020b. Workshop on Data-limited Stocks of Short-Lived Species (WKDLSSLS2). ICES Scientific Reports. 2:99. 119 pp.
+http://doi.org/10.17895/ices.pub.5984 \
+\
+ICES. 2021a. Benchmark Workshop on selected stocks in the Western Waters in 2021 (WKWEST). ICES Scientific Reports.
+3:31. 504 pp. https://doi.org/10.17895/ices.pub.8137 \
+\
+ICES. 2021b. Working Group on Southern Horse Mackerel Anchovy and Sardine (WGHANSA). ICES Scientific Reports. 3:55.
+679 pp. https://doi.org/10.17895/ices.pub.8138 \
+\
+ICES. 2021c. Advice on fishing opportunities. In Report of the ICES Advisory Committee, 2021. ICES Advice 2021, section
+1.1.1. https://doi.org/10.17895/ices.advice.7720 \
+\
+ICES. 2021d. Workshop on Data-Limited Stocks of Short-Lived Species (WKDLSSLS3). ICES Scientific Reports. 3:86. 60pp.
+https://doi.org/10.17895/ices.pub.8145 \
+\
+\
+
+Download the stock assessment data and figures. \
+\
+Recommended citation: ICES. 2021. Sardine (Sardina pilchardus) in Subarea 7 (Southern Celtic Seas, English Channel).
+In Report of the ICES Advisory Committee, 2021. ICES Advice 2021, pil.27.7, https://doi.org/10.17895/ices.advice.7814
+
