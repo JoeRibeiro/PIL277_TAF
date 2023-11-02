@@ -12,12 +12,12 @@
 # Load libraries ----------------------------------------------------------
 stopifnot("renv package must be installed. This package will construct an environment for the project"=class(try(find.package("renv"), silent = TRUE)) != "try-error")
 
-if(renv::status()[["synchronized"]]==F){
-  print("Attention! The required libraries need to be installed. Please accept installation to set up reproducible environment. renv will install these packages in a new isolated environment specifically for this stock assessment.")
-  renv::activate() # Check the environment is right and if not install the right versions of packages.
-  renv::restore() # Check the environment is right and if not install the right versions of packages.
-  print("Please check for any error installation messages. If successful, rerun bootstrap.")
-}else{
+# if(renv::status()[["synchronized"]]==F){
+#   print("Attention! The required libraries need to be installed. Please accept installation to set up reproducible environment. renv will install these packages in a new isolated environment specifically for this stock assessment.")
+#   renv::activate() # Check the environment is right and if not install the right versions of packages.
+#   renv::restore() # Check the environment is right and if not install the right versions of packages.
+#   print("Please check for any error installation messages. If successful, rerun bootstrap.")
+# }else{
   
   # Load libraries needed in bootstrap.r
   library(rstudioapi) # This has been written as an R studio project using RStudio Version 1.4.1717 on windows 10 and R version 4.1.2
@@ -219,6 +219,6 @@ if(renv::status()[["synchronized"]]==F){
   sessionInfo()
   
   # End of script -----------------------------------------------------------
-}  
+#}  
 
 
