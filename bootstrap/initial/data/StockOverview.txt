@@ -1,0 +1,170 @@
+Country	Season	Season type	Year	Stock	Area	Fleets	Effort	UnitEffort	Catch. kg	Catch Cat.	Report cat.	Discards Imported Or Raised
+France	1	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_70-99_0_0_all	48658	kWd	7303.67	Landings	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.d	OTB_DEF_70-99_0_0	1093334	kWd	0.00	Discards	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	177527	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Belgium	2	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_32-69_0_0_all	2400	kWd	60.00	Landings	R-Reported	Imported
+UK (England)	4	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	-9	NA	124668.00	Landings	A-All - reported, nonre	Imported
+France	3	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_70-99_0_0_all	237093	kWd	8855.34	Landings	R-Reported	Imported
+France	4	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	107679	kWd	86641.44	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pil.27.7	27.7.h	OTM_SPF_32-69_0_0_all	-9	NA	713304.00	Landings	R-Reported	Imported
+Belgium	3	Quarter	2022	pil.27.7	27.7.e	SSC_DEF_>=120_0_0_all	16992	kWd	159.00	Landings	R-Reported	Imported
+Netherlands	4	Quarter	2022	pil.27.7	27.7.h	OTM_SPF_32-69_0_0_all	126778	kWd	0.00	Discards	R-Reported	Imported
+Netherlands	1	Quarter	2022	pil.27.7	27.7.e	SSC_DEF_70-99_0_0_all	6039	kWd	160.00	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_100-119_0_0_all	6625	kWd	60.00	Landings	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.e	OTB_SPF_70-99_0_0_all	1751	kWd	68.95	Landings	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.e	OTB_DEF_70-99_0_0	407844	kWd	0.00	Discards	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.e	OTM_SPF_70-99_0_0_all	472	kWd	17.18	Landings	R-Reported	Imported
+UK (England)	3	Quarter	2022	pil.27.7	27.7.e	GNS_DEF_all_0_0_all	-9	NA	68891.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2022	pil.27.7	27.7.f	GNS_DEF_all_0_0_all	-9	NA	12528.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2022	pil.27.7	27.7.f	PS_SPF_0_0_0	-9	NA	391536.00	Landings	A-All - reported, nonre	Imported
+Netherlands	1	Quarter	2022	pil.27.7	27.7.j	OTM_SPF_32-69_0_0_all	536155	kWd	0.00	Discards	R-Reported	Imported
+France	4	Quarter	2022	pil.27.7	27.7.h	MIS_MIS_0_0_0	1179852	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+UK(Scotland)	1	Quarter	2022	pil.27.7	27.7.d	MIS_MIS_0_0_0_HC	34045	kWd	88.00	Landings	R-Reported	Imported
+France	1	Quarter	2022	pil.27.7	27.7.d	MIS_MIS_0_0_0	2952056	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	1	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	99984	kWd	0.00	Discards	R-Reported	Imported
+France	4	Quarter	2022	pil.27.7	27.7.d	OTB_DEF_70-99_0_0	1052885	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Netherlands	4	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	209916	kWd	0.00	Discards	R-Reported	Imported
+Netherlands	3	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_70-99_0_0_all	192681	kWd	3540.00	Landings	R-Reported	Imported
+France	4	Quarter	2022	pil.27.7	27.7.d	OTB_SPF_70-99_0_0_all	13823	kWd	5175.79	Landings	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.d	OTB_DEF_32-69_0_0	39843	kWd	5429.04	Landings	R-Reported	Imported
+Belgium	1	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_>=120_0_0_all	91806	kWd	155.00	Landings	R-Reported	Imported
+UK (England)	4	Quarter	2022	pil.27.7	27.7.e	PS_SPF_0_0_0	-9	NA	1159105.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2022	pil.27.7	27.7.g	OTM_SPF_32-69_0_0_all	-9	NA	516.00	Landings	A-All - reported, nonre	Imported
+France	1	Quarter	2022	pil.27.7	27.7.e	OTM_SPF_70-99_0_0_all	828	kWd	58.76	Landings	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.e	OTB_SPF_32-69_0_0_all	3374	kWd	548.75	Landings	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.e	OTM_SPF_32-69_0_0_all	5077	kWd	333.88	Landings	R-Reported	Imported
+France	1	Quarter	2022	pil.27.7	27.7.e	OTB_DEF_70-99_0_0	214222	kWd	953.32	Landings	R-Reported	Imported
+Germany	3	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	-9	NA	1140.00	Landings	R-Reported	Imported
+UK (England)	4	Quarter	2022	pil.27.7	27.7.e	GNS_DEF_all_0_0_all	-9	NA	353968.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2022	pil.27.7	27.7.e	LLS_FIF_0_0_0_all	-9	NA	4.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2022	pil.27.7	27.7.f	MIS_MIS_0_0_0_HC	-9	NA	54004.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2022	pil.27.7	27.7.f	GNS_DEF_all_0_0_all	-9	NA	956688.00	Landings	A-All - reported, nonre	Imported
+France	3	Quarter	2022	pil.27.7	27.7.h	PS_SPF_0_0_0	86	kWd	4357.51	Landings	R-Reported	Imported
+UK(Scotland)	4	Quarter	2022	pil.27.7	27.7.d	OTB_CRU_70-99_0_0_all	22277	kWd	220.00	Landings	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.d	OTB_DEF_70-99_0_0	670161	kWd	16028.71	Landings	R-Reported	Imported
+France	4	Quarter	2022	pil.27.7	27.7.d	MIS_MIS_0_0_0	3269134	kWd	7038.96	Landings	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.d	OTB_DEF_70-99_0_0	1093334	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+UK (England)	2	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_All_0_0_All	-9	NA	4584.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2022	pil.27.7	27.7.e	MIS_MIS_0_0_0_HC	-9	NA	2.00	Landings	A-All - reported, nonre	Imported
+France	4	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	107679	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+Germany	4	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	-9	NA	66.00	Landings	R-Reported	Imported
+Ireland	4	Quarter	2022	pil.27.7	27.7.a	PTM_SPF_32-69_0_0_all	-9	NA	1800.00	Landings	R-Reported	Imported
+Denmark	4	Quarter	2022	pil.27.7	27.7.e	OTM_SPF_32-69_0_0_all	-9	NA	2181786.00	Landings	R-Reported	Imported
+Netherlands	4	Quarter	2022	pil.27.7	27.7.f	OTM_SPF_32-69_0_0_all	13292	kWd	0.00	Discards	R-Reported	Imported
+Netherlands	2	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_100-119_0_0_all	5821	kWd	290.00	Landings	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.d	OTB_SPF_70-99_0_0_all	48217	kWd	3480.68	Landings	R-Reported	Imported
+France	1	Quarter	2022	pil.27.7	27.7.e	OTB_SPF_70-99_0_0_all	15904	kWd	480.86	Landings	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.d	OTB_SPF_32-69_0_0_all	18295	kWd	1333.42	Landings	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.e	MIS_MIS_0_0_0	3555994	kWd	313.55	Landings	R-Reported	Imported
+Ireland	4	Quarter	2022	pil.27.7	27.7.g	PTM_SPF_32-69_0_0_all	-9	NA	378576.00	Landings	R-Reported	Imported
+UK (England)	3	Quarter	2022	pil.27.7	27.7.e	PS_SPF_0_0_0	-9	NA	604931.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2022	pil.27.7	27.7.f	GNS_DEF_all_0_0_all	-9	NA	456852.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2022	pil.27.7	27.7.f	PS_SPF_0_0_0	-9	NA	338325.00	Landings	A-All - reported, nonre	Imported
+Netherlands	1	Quarter	2022	pil.27.7	27.7.e	SSC_DEF_100-119_0_0_all	11277	kWd	170.00	Landings	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.j	MIS_MIS_0_0_0	1677242	kWd	2163.20	Landings	R-Reported	Imported
+UK(Scotland)	2	Quarter	2022	pil.27.7	27.7.d	MIS_MIS_0_0_0_HC	14608	kWd	652.00	Landings	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	177527	kWd	154590.35	Landings	R-Reported	Imported
+France	1	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	99984	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.d	OTB_DEF_70-99_0_0	1093334	kWd	16835.40	Landings	R-Reported	Imported
+UK (England)	3	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_All_0_0_All	-9	NA	30.00	Landings	A-All - reported, nonre	Imported
+Netherlands	1	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_100-119_0_0_all	17914	kWd	40.00	Landings	R-Reported	Imported
+Netherlands	4	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_70-99_0_0_all	368790	kWd	2870.00	Landings	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_70-99_0_0_all	108249	kWd	3794.07	Landings	R-Reported	Imported
+Denmark	3	Quarter	2022	pil.27.7	27.7.e	OTM_SPF_32-69_0_0_all	-9	NA	3253.00	Landings	R-Reported	Imported
+Belgium	4	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_>=120_0_0_all	51666	kWd	209.00	Landings	R-Reported	Imported
+UK (England)	1	Quarter	2022	pil.27.7	27.7.f	PS_SPF_0_0_0	-9	NA	342234.00	Landings	A-All - reported, nonre	Imported
+Netherlands	4	Quarter	2022	pil.27.7	27.7.g	OTM_SPF_32-69_0_0_all	21875	kWd	0.00	Discards	R-Reported	Imported
+Netherlands	3	Quarter	2022	pil.27.7	27.7.e	SSC_DEF_70-99_0_0_all	1764	kWd	20.00	Landings	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.e	OTB_DEF_70-99_0_0	407844	kWd	940.61	Landings	R-Reported	Imported
+France	4	Quarter	2022	pil.27.7	27.7.e	OTM_SPF_70-99_0_0_all	680	kWd	31.82	Landings	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.j	OTM_SPF_16-31_0_0	423	kWd	1885.87	Landings	R-Reported	Imported
+UK (England)	1	Quarter	2022	pil.27.7	27.7.f	LLS_FIF_0_0_0_all	-9	NA	20.00	Landings	A-All - reported, nonre	Imported
+UK (England)	2	Quarter	2022	pil.27.7	27.7.e	GNS_DEF_all_0_0_all	-9	NA	12411.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2022	pil.27.7	27.7.f	GNS_DEF_all_0_0_all	-9	NA	1007013.00	Landings	A-All - reported, nonre	Imported
+France	2	Quarter	2022	pil.27.7	27.7.h	OTB_DEF_70-99_0_0	25829	kWd	5.18	Landings	R-Reported	Imported
+UK(Scotland)	2	Quarter	2022	pil.27.7	27.7.d	OTB_CRU_70-99_0_0_all	20161	kWd	2794.00	Landings	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.d	OTB_DEF_70-99_0_0	670161	kWd	0.00	Discards	R-Reported	Imported
+France	1	Quarter	2022	pil.27.7	27.7.d	OTB_DEF_70-99_0_0	757470	kWd	4364.89	Landings	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	127556	kWd	546316.25	Landings	R-Reported	Imported
+UK (England)	1	Quarter	2022	pil.27.7	27.7.e	MIS_MIS_0_0_0_HC	-9	NA	5746.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_All_0_0_All	-9	NA	852.00	Landings	A-All - reported, nonre	Imported
+France	4	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_70-99_0_0_all	145016	kWd	1465.84	Landings	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.d	MIS_MIS_0_0_0	1463006	kWd	9183.39	Landings	R-Reported	Imported
+Ireland	4	Quarter	2022	pil.27.7	27.7.j	PTM_SPF_32-69_0_0_all	-9	NA	612181.00	Landings	R-Reported	Imported
+UK (England)	1	Quarter	2022	pil.27.7	27.7.e	OTM_SPF_32-69_0_0_all	-9	NA	6064.00	Landings	A-All - reported, nonre	Imported
+Netherlands	4	Quarter	2022	pil.27.7	27.7.e	OTM_SPF_32-69_0_0_all	11766	kWd	3700.00	Landings	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.d	OTB_SPF_32-69_0_0_all	9051	kWd	918.41	Landings	R-Reported	Imported
+France	4	Quarter	2022	pil.27.7	27.7.e	OTM_SPF_32-69_0_0_all	3303	kWd	347.01	Landings	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.e	OTB_DEF_32-69_0_0	6417	kWd	14.03	Landings	R-Reported	Imported
+France	1	Quarter	2022	pil.27.7	27.7.e	OTB_SPF_32-69_0_0_all	5598	kWd	133.90	Landings	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.e	OTB_DEF_70-99_0_0	381287	kWd	324.88	Landings	R-Reported	Imported
+UK (England)	2	Quarter	2022	pil.27.7	27.7.f	MIS_MIS_0_0_0_HC	-9	NA	1.00	Landings	A-All - reported, nonre	Imported
+Netherlands	4	Quarter	2022	pil.27.7	27.7.j	OTM_SPF_32-69_0_0_all	278583	kWd	0.00	Discards	R-Reported	Imported
+Netherlands	2	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_32-69_0_0_all	390	kWd	90.00	Landings	R-Reported	Imported
+Netherlands	3	Quarter	2022	pil.27.7	27.7.e	SSC_DEF_100-119_0_0_all	8821	kWd	10.00	Landings	R-Reported	Imported
+France	4	Quarter	2022	pil.27.7	27.7.e	MIS_MIS_0_0_0	3512288	kWd	460.99	Landings	R-Reported	Imported
+France	1	Quarter	2022	pil.27.7	27.7.d	PS_SPF_0_0_0	4376	kWd	117.00	Landings	R-Reported	Imported
+UK(Scotland)	3	Quarter	2022	pil.27.7	27.7.d	MIS_MIS_0_0_0_HC	3702	kWd	200.00	Landings	R-Reported	Imported
+France	1	Quarter	2022	pil.27.7	27.7.d	MIS_MIS_0_0_0	2952056	kWd	608.16	Landings	R-Reported	Imported
+France	1	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	99984	kWd	298131.38	Landings	R-Reported	Imported
+France	4	Quarter	2022	pil.27.7	27.7.d	OTB_DEF_70-99_0_0	1052885	kWd	0.00	Discards	R-Reported	Imported
+Netherlands	2	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_70-99_0_0_all	120474	kWd	8620.00	Landings	R-Reported	Imported
+Netherlands	4	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	209916	kWd	10860.00	Landings	R-Reported	Imported
+France	1	Quarter	2022	pil.27.7	27.7.d	OTB_SPF_70-99_0_0_all	99283	kWd	620.88	Landings	R-Reported	Imported
+France	4	Quarter	2022	pil.27.7	27.7.d	OTB_DEF_32-69_0_0	34720	kWd	200.00	Landings	R-Reported	Imported
+Belgium	2	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_>=120_0_0_all	32274	kWd	725.00	Landings	R-Reported	Imported
+UK (England)	2	Quarter	2022	pil.27.7	27.7.e	PS_SPF_0_0_0	-9	NA	37849.00	Landings	A-All - reported, nonre	Imported
+Netherlands	2	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	32433	kWd	13320.00	Landings	R-Reported	Imported
+Ireland	4	Quarter	2022	pil.27.7	27.7.j.2	PTM_SPF_16-31_0_0_all	-9	NA	0.00	Landings	R-Reported	Imported
+France	4	Quarter	2022	pil.27.7	27.7.d	OTB_SPF_32-69_0_0_all	1193	kWd	120.00	Landings	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.e	MIS_MIS_0_0_0	3007104	kWd	1029.10	Landings	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.e	OTM_SPF_70-99_0_0_all	2519	kWd	234.43	Landings	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.e	OTM_SPF_32-69_0_0_all	16373	kWd	1582.09	Landings	R-Reported	Imported
+UK (England)	1	Quarter	2022	pil.27.7	27.7.e	GNS_DEF_all_0_0_all	-9	NA	662627.00	Landings	A-All - reported, nonre	Imported
+UK (England)	1	Quarter	2022	pil.27.7	27.7.f	MIS_MIS_0_0_0_HC	-9	NA	384038.00	Landings	A-All - reported, nonre	Imported
+France	2	Quarter	2022	pil.27.7	27.7.d	PS_SPF_0_0_0	10257	kWd	494.47	Landings	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_70-99_0_0_all	28069	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+UK(Scotland)	3	Quarter	2022	pil.27.7	27.7.d	OTB_CRU_70-99_0_0_all	749	kWd	30.00	Landings	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.d	MIS_MIS_0_0_0	2142979	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_70-99_0_0_all	61184	kWd	84836.65	Landings	R-Reported	Imported
+France	4	Quarter	2022	pil.27.7	27.7.d	OTB_DEF_70-99_0_0	1052885	kWd	25483.87	Landings	R-Reported	Imported
+UK (England)	1	Quarter	2022	pil.27.7	27.7.d	SDN_all_0_0_all	-9	NA	52.00	Landings	A-All - reported, nonre	Imported
+Netherlands	1	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_70-99_0_0_all	414511	kWd	5190.00	Landings	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.d	OTB_SPF_70-99_0_0_all	41330	kWd	15013.76	Landings	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.d	OTB_DEF_32-69_0_0	13490	kWd	783.67	Landings	R-Reported	Imported
+Belgium	3	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_>=120_0_0_all	38232	kWd	158.00	Landings	R-Reported	Imported
+UK (England)	1	Quarter	2022	pil.27.7	27.7.e	PS_SPF_0_0_0	-9	NA	1122053.00	Landings	A-All - reported, nonre	Imported
+Netherlands	3	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	32805	kWd	17690.00	Landings	R-Reported	Imported
+Ireland	4	Quarter	2022	pil.27.7	27.7.g	PTM_SPF_16-31_0_0_all	-9	NA	0.00	Landings	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.e	OTB_SPF_70-99_0_0_all	2482	kWd	169.87	Landings	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_16-31_0_0	11110	kWd	14780.15	Landings	R-Reported	Imported
+France	4	Quarter	2022	pil.27.7	27.7.e	OTB_SPF_32-69_0_0_all	1672	kWd	17.16	Landings	R-Reported	Imported
+France	1	Quarter	2022	pil.27.7	27.7.e	MIS_MIS_0_0_0	3174692	kWd	829.10	Landings	R-Reported	Imported
+Ireland	2	Quarter	2022	pil.27.7	27.7.j	MIS_MIS_0_0_0_HC	-9	NA	21.00	Landings	R-Reported	Imported
+UK (England)	2	Quarter	2022	pil.27.7	27.7.e	OTB_DEF_>=120_0_0_all	-9	NA	226.00	Landings	A-All - reported, nonre	Imported
+Netherlands	1	Quarter	2022	pil.27.7	27.7.c	OTM_SPF_32-69_0_0_all	206645	kWd	0.00	Discards	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.d	PS_SPF_0_0_0	8202	kWd	105.91	Landings	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_70-99_0_0_all	28069	kWd	10442.29	Landings	R-Reported	Imported
+UK(Scotland)	1	Quarter	2022	pil.27.7	27.7.d	OTB_CRU_70-99_0_0_all	170117	kWd	156.00	Landings	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.d	MIS_MIS_0_0_0	2142979	kWd	29601.88	Landings	R-Reported	Imported
+France	1	Quarter	2022	pil.27.7	27.7.d	OTB_DEF_70-99_0_0	757470	kWd	0.00	Discards	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	127556	kWd	0.00	Logbook Registered Discard	R-Reported	Imported
+UK (England)	4	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_All_0_0_All	-9	NA	197.00	Landings	A-All - reported, nonre	Imported
+UK (England)	3	Quarter	2022	pil.27.7	27.7.e	MIS_MIS_0_0_0_HC	-9	NA	454.00	Landings	A-All - reported, nonre	Imported
+Netherlands	1	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	137370	kWd	2020.00	Landings	R-Reported	Imported
+France	1	Quarter	2022	pil.27.7	27.7.d	SSC_DEF_70-99_0_0_all	161916	kWd	915.90	Landings	R-Reported	Imported
+Denmark	3	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	-9	NA	252294.00	Landings	R-Reported	Imported
+UK (England)	3	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_32-69_0_0_all	-9	NA	152225.00	Landings	A-All - reported, nonre	Imported
+Netherlands	3	Quarter	2022	pil.27.7	27.7.e	OTM_SPF_32-69_0_0_all	9444	kWd	20750.00	Landings	R-Reported	Imported
+France	3	Quarter	2022	pil.27.7	27.7.e	OTB_DEF_32-69_0_0	4004	kWd	57.50	Landings	R-Reported	Imported
+France	4	Quarter	2022	pil.27.7	27.7.e	OTB_SPF_70-99_0_0_all	3239	kWd	112.32	Landings	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.e	OTB_SPF_32-69_0_0_all	4572	kWd	217.19	Landings	R-Reported	Imported
+France	2	Quarter	2022	pil.27.7	27.7.e	OTB_DEF_70-99_0_0	381287	kWd	0.00	Discards	R-Reported	Imported
+Germany	3	Quarter	2022	pil.27.7	27.7.e	OTM_SPF_32-69_0_0_all	-9	NA	892.00	Landings	R-Reported	Imported
+UK (England)	4	Quarter	2022	pil.27.7	27.7.f	MIS_MIS_0_0_0_HC	-9	NA	283644.00	Landings	A-All - reported, nonre	Imported
+UK (England)	4	Quarter	2022	pil.27.7	27.7.f	OTM_SPF_32-69_0_0_all	-9	NA	284.00	Landings	A-All - reported, nonre	Imported
+Ireland	4	Quarter	2022	pil.27.7	27.7.a	PTM_SPF_16-31_0_0_all	-9	NA	0.00	Landings	R-Reported	Imported
+France	4	Quarter	2022	pil.27.7	27.7.e	OTB_DEF_70-99_0_0	250595	kWd	422.32	Landings	R-Reported	Imported
+France	4	Quarter	2022	pil.27.7	27.7.d	PS_SPF_0_0_0	5476	kWd	55.12	Landings	R-Reported	Imported
+France	4	Quarter	2022	pil.27.7	27.7.d	OTM_SPF_70-99_0_0_all	17471	kWd	13430.02	Landings	R-Reported	Imported
+UK(Scotland)	4	Quarter	2022	pil.27.7	27.7.d	MIS_MIS_0_0_0_HC	26403	kWd	15.00	Landings	R-Reported	Imported

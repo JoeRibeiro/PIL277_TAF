@@ -67,7 +67,10 @@ stopifnot("renv package must be installed. This package will construct an enviro
   Index_total_area_bootstrap=read.csv(paste0(wdir,'/bootstrap/initial/data/PIL_bootstrap_results_totarea_2017-2021.csv'), fileEncoding = 'UTF-8-BOM',colClasses="character", stringsAsFactors=FALSE, na.strings=".") # read.taf doesn't work with this file but read.csv does
   Advice_history_a=read.csv(paste0(wdir,'/bootstrap/initial/data/historic_advice_5a.csv'), fileEncoding = 'UTF-8-BOM',colClasses="character", stringsAsFactors=FALSE, na.strings=".") # read.taf doesn't work with this file but read.csv does
   Advice_history_b=read.csv(paste0(wdir,'/bootstrap/initial/data/historic_advice_5b.csv'), fileEncoding = 'UTF-8-BOM',colClasses="character", stringsAsFactors=FALSE, na.strings=".") # read.taf doesn't work with this file but read.csv does
-
+  intercatch_23_MeanWeigthAtAgeLength=read.csv(paste0(wdir,'/bootstrap/initial/data/MeanWeigthAtAgeLength.txt'), fileEncoding = 'UTF-8-BOM',colClasses="character", stringsAsFactors=FALSE, na.strings=".",sep= "\t") 
+  intercatch_23_NumbersAtAgeLength =read.csv(paste0(wdir,'/bootstrap/initial/data/NumbersAtAgeLength.txt'), fileEncoding = 'UTF-8-BOM',colClasses="character", stringsAsFactors=FALSE, na.strings=".",sep= "\t")
+  intercatch_23_StockOverview =read.csv(paste0(wdir,'/bootstrap/initial/data/StockOverview.txt'), fileEncoding = 'UTF-8-BOM',colClasses="character", stringsAsFactors=FALSE, na.strings=".",sep= "\t")
+  
   # Write each data file 
   write.taf(Catches_uncorrected,paste0(wdir,"/bootstrap/data/Intercatch.csv"),quote=TRUE)
   write.taf(Catches_reviewed_fr,paste0(wdir,"/bootstrap/data/review landings_France.csv"),quote=TRUE)
@@ -77,7 +80,10 @@ stopifnot("renv package must be installed. This package will construct an enviro
   write.taf(Index_total_area_bootstrap,paste0(wdir,"/bootstrap/data/Index_bootstrap.csv"),quote=TRUE)
   write.taf(Advice_history_a,paste0(wdir,"/bootstrap/data/Advice_history_a.csv"),quote=TRUE)
   write.taf(Advice_history_b,paste0(wdir,"/bootstrap/data/Advice_history_b.csv"),quote=TRUE)
-
+  write.taf(intercatch_23_MeanWeigthAtAgeLength,paste0(wdir,"/bootstrap/data/intercatch_23_MeanWeigthAtAgeLength.csv"),quote=TRUE)
+  write.taf(intercatch_23_NumbersAtAgeLength,paste0(wdir,"/bootstrap/data/intercatch_23_NumbersAtAgeLength.csv"),quote=TRUE)
+  write.taf(intercatch_23_StockOverview,paste0(wdir,"/bootstrap/data/intercatch_23_StockOverview.csv"),quote=TRUE)
+  
   
   # Document data and create the data.bib file ------------------------------
   
@@ -89,13 +95,45 @@ stopifnot("renv package must be installed. This package will construct an enviro
   draft.data(originator="WGHANSA", 
              year=2022, 
              title="Landings data for pil.27.7", 
+             period="2022",
+             source="'Weight in Length class' Intercatch file downloaded in 2023, for 2022. Marked as finalised dataset on 02/11/2023 and downloaded from https://intercatch.ices.dk/CS/Data/StockTransformation/ViewStockDetails.aspx?TaskLogId=28081",
+             data.files=c("intercatch_23_MeanWeigthAtAgeLength.csv"), 
+             data.scripts=NULL, # we need to set this to NULL or it will automatically take all the files with extension .R
+             file="bootstrap/intercatch_23_MeanWeigthAtAgeLength.bib",
+             append=F)
+  
+  draft.data(originator="WGHANSA", 
+             year=2022, 
+             title="Landings data for pil.27.7", 
+             period="2022",
+             source="'Number in Length class' Intercatch file downloaded in 2023, for 2022. Marked as finalised dataset on 02/11/2023 and downloaded from https://intercatch.ices.dk/CS/Data/StockTransformation/ViewStockDetails.aspx?TaskLogId=28081",
+             data.files=c("intercatch_23_NumbersAtAgeLength.csv"), 
+             data.scripts=NULL, # we need to set this to NULL or it will automatically take all the files with extension .R
+             file="bootstrap/intercatch_23_NumbersAtAgeLength.bib",
+             append=F)
+  
+  
+  draft.data(originator="WGHANSA", 
+             year=2022, 
+             title="Landings data for pil.27.7", 
+             period="2022",
+             source="'Stock Overview' Intercatch file downloaded in 2023, for 2022. Marked as finalised dataset on 02/11/2023 and downloaded from https://intercatch.ices.dk/CS/Data/StockTransformation/ViewStockDetails.aspx?TaskLogId=28081",
+             data.files=c("intercatch_23_StockOverview.csv"), 
+             data.scripts=NULL, # we need to set this to NULL or it will automatically take all the files with extension .R
+             file="bootstrap/intercatch_23_StockOverview.bib",
+             append=F)
+  
+  
+  draft.data(originator="WGHANSA", 
+             year=2022, 
+             title="Landings data for pil.27.7", 
              period="1987-2020",
              source="Intercatch download. This is inaccurate and needs updating with the latest French data. There is a corrected alternative to this file.",
              data.files=c("Intercatch.csv"), 
              data.scripts=NULL, # we need to set this to NULL or it will automatically take all the files with extension .R
              file="bootstrap/Intercatch.bib",
              append=F)
-
+  
     
   draft.data(originator="WGHANSA", 
              year=2022, 
