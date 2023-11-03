@@ -1,3 +1,5 @@
+renv::snapshot()
+
 ## Preprocess data, write TAF data tables
 # There are many data objects defined in this script that are plotted in output.R, but they should instead be saved to intermediate files
 
@@ -17,9 +19,19 @@ thisyear = max(read.csv("bootstrap/data/Index_bootstrap.csv", fileEncoding = 'UT
 finalyear = thisyear - 1 # The last year with complete landings data will be the previous year
 cat(thisyear,file=paste0(wdir,"/bootstrap/data/thisyear.txt"),sep="\n") # Where possible, define everything relative to this.
 
-# Begin data wrangling
+# Begin data wrangling. Combine Catch
 Catches=read.taf(paste0(wdir,"/bootstrap/data/Catches.csv"))
-  
+Catches2022=read.taf(paste0(wdir,"/bootstrap/data/intercatch_23_StockOverview.csv"))
+Catches2022=dplyr::rename(Catches2022,SeasonType = Season.type)
+Catches2022$Stock <- NULL
+Catches2022$Caton = Catches2022$Catch..kg*1000
+Catches2022$Catch..kg <- NULL
+Catches2022=dplyr::rename(Catches2022,  Fleet =  Fleets   )
+Catches2022=dplyr::rename(Catches2022,   ReportingCategory = Report.cat.   )
+Catches2022=dplyr::rename(Catches2022, CatchCategory  = Catch.Cat.   )
+Catches2022=dplyr::rename(Catches2022, CATONRaisedOrImported  = Discards.Imported.Or.Raised  )
+Catches=plyr::rbind.fill(Catches,Catches2022)
+
 ### metiers
 
 Catches$metier2<-ifelse(Catches$Fleet=="PS_SPF_0_0_0","PS_SPF_0_0_0","Other")
@@ -122,7 +134,6 @@ LandQuarter2 <- ddply(Lan2002,.(Year,Season),summarize,Landings=sum(Caton)/1000)
 # Rename columns for the next section (Spict)
 landSeason<-dplyr::rename(landSeason,Quarter=Season,landings=Catch)
 
-renv::snapshot()
 mkdir('data')
 
 print("data stuff done, now try and save it all as rdata file...")
