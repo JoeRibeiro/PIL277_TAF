@@ -15,7 +15,7 @@ wdir = getwd(); print(wdir)
 
 
 # Get the last year in the biomass timeseries. This will be the current year for the peltic survey just done. 
-thisyear = max(read.csv("bootstrap/data/Index_bootstrap.csv", fileEncoding = 'UTF-8-BOM', stringsAsFactors=FALSE, na.strings=".")$year)
+thisyear = 2023#max(read.csv("bootstrap/data/Index_bootstrap.csv", fileEncoding = 'UTF-8-BOM', stringsAsFactors=FALSE, na.strings=".")$year)
 finalyear = thisyear - 1 # The last year with complete landings data will be the previous year
 cat(thisyear,file=paste0(wdir,"/bootstrap/data/thisyear.txt"),sep="\n") # Where possible, define everything relative to this.
 

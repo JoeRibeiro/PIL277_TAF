@@ -41,6 +41,25 @@
       ],
       "Hash": "1a00d4828f33a9d690806e98bd17150c"
     },
+    "Matrix.utils": {
+      "Package": "Matrix.utils",
+      "Version": "0.9.7",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "Matrix.utils",
+      "RemoteUsername": "cvarrichio",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "14c2462076f2542fac877075e9b8dbb47d7eeb2a",
+      "Requirements": [
+        "Matrix",
+        "R",
+        "grr",
+        "methods",
+        "stats"
+      ],
+      "Hash": "7b40c69bca85e11b7ed085530ff793da"
+    },
     "R6": {
       "Package": "R6",
       "Version": "2.5.1",
@@ -450,6 +469,16 @@
         "methods"
       ],
       "Hash": "4f2596dfb05dac67b9dc558e5c6fba2e"
+    },
+    "grr": {
+      "Package": "grr",
+      "Version": "0.9.5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "195f3206842ea5ae11968e8d462bb828"
     },
     "gtable": {
       "Package": "gtable",

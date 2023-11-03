@@ -95,8 +95,8 @@ stopifnot("renv package must be installed. This package will construct an enviro
   draft.data(originator="WGHANSA", 
              year=2022, 
              title="Landings data for pil.27.7", 
-             period="2022",
-             source="'Weight in Length class' Intercatch file downloaded in 2023, for 2022. Marked as finalised dataset on 02/11/2023 and downloaded from https://intercatch.ices.dk/CS/Data/StockTransformation/ViewStockDetails.aspx?TaskLogId=28081",
+             period="2021-2022",
+             source="'Weight in Length class' Intercatch file downloaded in 2023, for 2021 and 2022. Marked as finalised dataset on 02/11/2023 and downloaded from https://intercatch.ices.dk/CS/Data/StockTransformation/ViewStockDetails.aspx?TaskLogId=28081",
              data.files=c("intercatch_23_MeanWeigthAtAgeLength.csv"), 
              data.scripts=NULL, # we need to set this to NULL or it will automatically take all the files with extension .R
              file="bootstrap/intercatch_23_MeanWeigthAtAgeLength.bib",
@@ -105,8 +105,8 @@ stopifnot("renv package must be installed. This package will construct an enviro
   draft.data(originator="WGHANSA", 
              year=2022, 
              title="Landings data for pil.27.7", 
-             period="2022",
-             source="'Number in Length class' Intercatch file downloaded in 2023, for 2022. Marked as finalised dataset on 02/11/2023 and downloaded from https://intercatch.ices.dk/CS/Data/StockTransformation/ViewStockDetails.aspx?TaskLogId=28081",
+             period="2021-2022",
+             source="'Number in Length class' Intercatch file downloaded in 2023, for 2021 and 2022. Marked as finalised dataset on 02/11/2023 and downloaded from https://intercatch.ices.dk/CS/Data/StockTransformation/ViewStockDetails.aspx?TaskLogId=28081",
              data.files=c("intercatch_23_NumbersAtAgeLength.csv"), 
              data.scripts=NULL, # we need to set this to NULL or it will automatically take all the files with extension .R
              file="bootstrap/intercatch_23_NumbersAtAgeLength.bib",
@@ -116,8 +116,8 @@ stopifnot("renv package must be installed. This package will construct an enviro
   draft.data(originator="WGHANSA", 
              year=2022, 
              title="Landings data for pil.27.7", 
-             period="2022",
-             source="'Stock Overview' Intercatch file downloaded in 2023, for 2022. Marked as finalised dataset on 02/11/2023 and downloaded from https://intercatch.ices.dk/CS/Data/StockTransformation/ViewStockDetails.aspx?TaskLogId=28081",
+             period="2021-2022",
+             source="'Stock Overview' Intercatch file downloaded in 2023, for 2021 and 2022. Marked as finalised dataset on 02/11/2023 and downloaded from https://intercatch.ices.dk/CS/Data/StockTransformation/ViewStockDetails.aspx?TaskLogId=28081",
              data.files=c("intercatch_23_StockOverview.csv"), 
              data.scripts=NULL, # we need to set this to NULL or it will automatically take all the files with extension .R
              file="bootstrap/intercatch_23_StockOverview.bib",
